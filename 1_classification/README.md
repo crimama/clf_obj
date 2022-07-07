@@ -24,31 +24,32 @@
 - 라벨 json 파일 
 - 결과 출력 이미지
 ```
-1. Github에 빈 Repositary 생성 
-2. Repositary를 만든 뒤 로컬에서 Clone
-3. 파일 복사 
+### 1. Github에 빈 Repositary 생성 
+### 2. Repositary를 만든 뒤 로컬에서 Clone
+### 3. 파일 복사 
     - 위 html 폴더에 있는 파일을 모두 자신이 만든 Repositary 폴더에 넣음 
-    - 데이터 학습 단계에서 다운 받은 weights 파일을 mobilenet 폴더에 넣음 
-        (이 때 model.json 뿐만 아니라 .bin파일 모두 넣어야 함) 
-4. Git push         
+    
+    `** 매우 중요 : 데이터 학습 단계에서 다운 받은 weights 파일을 mobilenet 폴더에 넣음 
+        (이 때 model.json 뿐만 아니라 .bin파일 모두 넣어야 함)** `
+### 4. Git push         
     - git push를 이용하여 로컬의 파일들을 github에 업로드 함 
    
 ## 4. Web page 만들기 (gitpage deploy) 
 - 깃허브의 pages 기능을 사용하면 index.html로 webpage를 만들 수 있음 
-1. pages 만들기 
+### 1. pages 만들기 
     - 앞서 push 한 git repositary에서 setting -> pages를 들어 감 
 ![image](https://user-images.githubusercontent.com/92499881/177718930-8b353c2f-09fc-4fab-9563-6a8fe19ee645.png)
 
-2. Source 지정 
+### 2. Source 지정 
     - Source 탭에서 main -root로 설정하고 save를 누름 
 ![image](https://user-images.githubusercontent.com/92499881/177719106-88cb9a9e-dfe2-42e4-8227-d1259c6541fe.png)
-3. Web page 링크 확인 
+### 3. Web page 링크 확인 
     - Save를 누를 경우 자동으로 Webpage 링크가 생성 됨 
     ![image](https://user-images.githubusercontent.com/92499881/177719249-a04d1d49-34e5-4d1e-996a-b851ae4c61a6.png)
     - 다만 웹페이지 링크가 생성 되더라도 바로 보여지지는 않음 (웹페이지 생성을 위한 시간 필요) 
     - 웹 페이지가 생성 완료됬을 경우 code 탭 오른쪽 하단에 다음과 같은 표시가 뜸 
     ![image](https://user-images.githubusercontent.com/92499881/177719476-77bbb1ab-a889-4eff-98de-2764cef6af05.png)
-4. Web page 실행 
+### 4. Web page 실행 
 ![image](https://user-images.githubusercontent.com/92499881/177719620-2b41e617-7fd2-4641-8e15-4e0090685d67.png)
 - 상단에는 웹캠이 실시간으로 실행 되며 Capture를 누르면 사진이 찍힘 
 - 왼쪽 하단에 찍힌 사진이 출력 되며 이 사진이 input image가 되어 분류 모델이 실행 됨 
