@@ -5,3 +5,8 @@
 - 웹캠을 활용하며 로컬과 colab 환경에서 진행 됨
 - 각 파트의 가이드라인은 해당 폴더에 README.md로 작성 해 두었습니다 
 
+#1.Classification 
+[Classification](https://github.com/crimama/clf_obj/tree/main/1_classification)
+
+#2.Object Detection 
+[Object Detection](https://github.com/crimama/clf_obj/tree/main/2_object_detection)
