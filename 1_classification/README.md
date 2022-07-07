@@ -37,4 +37,15 @@
 - 깃허브의 pages 기능을 사용하면 index.html로 webpage를 만들 수 있음 
 1. pages 만들기 
     - 앞서 push 한 git repositary에서 setting -> pages를 들어 감 
-    -  
+![image](https://user-images.githubusercontent.com/92499881/177718930-8b353c2f-09fc-4fab-9563-6a8fe19ee645.png)
+
+2. Source 지정 
+    - Source 탭에서 main -root로 설정하고 save를 누름 
+![image](https://user-images.githubusercontent.com/92499881/177719106-88cb9a9e-dfe2-42e4-8227-d1259c6541fe.png)
+3. Web page 링크 확인 
+    - Save를 누를 경우 자동으로 Webpage 링크가 생성 됨 
+    ![image](https://user-images.githubusercontent.com/92499881/177719249-a04d1d49-34e5-4d1e-996a-b851ae4c61a6.png)
+    - 다만 웹페이지 링크가 생성 되더라도 바로 보여지지는 않음 (웹페이지 생성을 위한 시간 필요) 
+    - 웹 페이지가 생성 완료됬을 경우 code 탭 오른쪽 하단에 다음과 같은 표시가 뜸 
+    ![image](https://user-images.githubusercontent.com/92499881/177719476-77bbb1ab-a889-4eff-98de-2764cef6af05.png)
+
