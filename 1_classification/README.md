@@ -48,4 +48,8 @@
     - 다만 웹페이지 링크가 생성 되더라도 바로 보여지지는 않음 (웹페이지 생성을 위한 시간 필요) 
     - 웹 페이지가 생성 완료됬을 경우 code 탭 오른쪽 하단에 다음과 같은 표시가 뜸 
     ![image](https://user-images.githubusercontent.com/92499881/177719476-77bbb1ab-a889-4eff-98de-2764cef6af05.png)
-
+4. Web page 실행 
+![image](https://user-images.githubusercontent.com/92499881/177719620-2b41e617-7fd2-4641-8e15-4e0090685d67.png)
+- 상단에는 웹캠이 실시간으로 실행 되며 Capture를 누르면 사진이 찍힘 
+- 왼쪽 하단에 찍힌 사진이 출력 되며 이 사진이 input image가 되어 분류 모델이 실행 됨 
+- 분류 결과에 따라 Up 또는 Down 이미지가 출력 됨 
