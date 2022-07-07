@@ -3,7 +3,8 @@
 
 ## 1.데이터 수집 
 - Classification 파트 확인 
-- [데이터수집](https://github.com/crimama/clf_obj/blob/main/utils/Data_Collecting.md)
+- [데이터수집](https://github.com/crimama/clf_obj/blob/main/1_classification/1_Data_Collecting.ipynb)
+- 해당 노트북에 주석으로 가이드라인이 있음 
 
 ## 2.모델 학습 
 ```
