@@ -41,7 +41,7 @@
  ```
 ![image](https://user-images.githubusercontent.com/92499881/177737649-d0f9c2de-1c91-4650-b2e3-47ad169d7adf.png)
 
-7. Export Dataset
+## 7. Export Dataset
 ```
     - 만들어진 이미지 데이터 셋을 사용하기 위해 모델에 맞는 형태로 출력할 필요가 있음 
     - tfjs 모델      -> Tensorflow TFRecord 선택 
