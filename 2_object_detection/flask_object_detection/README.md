@@ -9,3 +9,7 @@
   - 아래 노트북을 코랩에서 실행 
   - 💡학습을 마친 뒤 best.pt를 저장해야 함💡 
 ```
+
+# 2. Web Deployment 
+~~~
+- 로컬에서 git clone https://github.com/crimama/clf_old 
