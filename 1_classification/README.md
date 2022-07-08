@@ -27,11 +27,12 @@
 ```
 ### 1. Github에 빈 Repositary 생성 
 ### 2. Repositary를 만든 뒤 로컬에서 Clone
+`git clone {금방 생성한 repositary}`
 ### 3. 파일 복사 
     - 위 html 폴더에 있는 파일을 모두 자신이 만든 Repositary 폴더에 넣음 
     
-    `** 매우 중요 : 데이터 학습 단계에서 다운 받은 weights 파일을 mobilenet 폴더에 넣음 
-        (이 때 model.json 뿐만 아니라 .bin파일 모두 넣어야 함)** `
+    ❗❗매우 중요 : 데이터 학습 단계에서 다운 받은 weights 파일을 mobilenet 폴더에 넣음 
+        (이 때 model.json 뿐만 아니라 .bin파일 모두 넣어야 함) 
 ### 4. Git push         
     - git push를 이용하여 로컬의 파일들을 github에 업로드 함 
    
