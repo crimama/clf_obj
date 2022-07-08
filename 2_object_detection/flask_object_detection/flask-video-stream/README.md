@@ -7,22 +7,18 @@ pip install -r requirements.txt
 ```
 
 ## Running ##
-To start the service `cd` to project folder and type `python server.py` or `python3 server.py`
-
-*It only runs on python3*
-
-Once done navigate to the ip of the server and access the port `5000`.
-
-http://localhost:5000
-
-## Configuration ##
-### Change running port ###
-The project is default configured to run at port 5000. To change the running port you must specify the argument `-p, --port [PORT]`.
-
-*Example:*
-
-```python3 server.py -p 3000 ``` Runs on port 3000
-
-### Change camera source ###
-To change the camera source of opencv you can go to the beginning of file `server.py` and add a `video_source=1` it can be 0,1,2... as many video inputs the device has in the declaration of object `Camera`. Or you can change the default video source on `camera.py` `Camera` class `__init__` method.
+### 1. 학습 모델 
+- 이전 단계 Yolov5에서 학습한 `best.pt`모델을 yolov5 폴더 안에 저장 
+### 2. 경로 설정 
+- 아나콘다 프롬프트를 실행 시킨 후 경로를 flask-video-stream으로 설정 
+```
+cd clf_obj/2_object_detection/flask_object_detection/flask-video-stream
+```
+### 3. 실행 
+```
+python app.py
+```
+### 4. Webpage에서 확인 
+- `app.py`파일을 실행시킬 경우 다음과 같은 ip주소가 나타 남, 이를 아무 웹 브라우저에서 실행 
+![image](https://user-images.githubusercontent.com/92499881/177930649-2946251d-79c8-4032-b556-7beca74bf521.png)
 
