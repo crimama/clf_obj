@@ -45,8 +45,8 @@
 ```
     - 만들어진 이미지 데이터 셋을 사용하기 위해 모델에 맞는 형태로 출력할 필요가 있음 
     - tfjs 모델      -> Tensorflow TFRecord 선택 
-    - Yolov5(Flask) -> YOLO v5 PyTorch     선택 
+    - Yolov5(Flask)  -> YOLO v5 PyTorch     선택 
     - 아래 출력 옵션은 show download code를 선택 
-    - continue를 클릭하게 되면 Raw URL 링크가 생성 됨 <-- 이것을 기록 해 두어야 함 
+    - ❗continue를 클릭하게 되면 Raw URL 링크가 생성 됨 <-- 이것을 기록 해 두어야 함 
 ```
 ![image](https://user-images.githubusercontent.com/92499881/177739288-92f2ec58-203b-44be-8dab-e9af9d5935e7.png)
