@@ -5,7 +5,8 @@ from capture import capture_and_save
 from camera import Camera
 import argparse, logging, logging.config, conf
 import os 
-os.remove('images/img.jpg')
+if os.path.exists('images/img.jpg'):
+	os.remove('images/img.jpg')
 logging.config.dictConfig(conf.dictConfig)
 logger = logging.getLogger(__name__)
 
