@@ -10,7 +10,7 @@ git clone https://github.com/crimama/clf_obj.git
 ```
 디렉토리 이동 
 ```
-cd clf_obj/2_object_detection/flask_object_detection/
+cd clf_obj/2_object_detection/flask_object_detection/flask-video-stream
 ```
 
 ## Requirements ##
