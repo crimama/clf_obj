@@ -12,6 +12,5 @@
 ```
 
 # 2. Web Deployment 
-~~~
 [flask-video-stream](https://github.com/crimama/clf_obj/tree/main/2_object_detection/flask_object_detection/flask-video-stream)
-```
+
