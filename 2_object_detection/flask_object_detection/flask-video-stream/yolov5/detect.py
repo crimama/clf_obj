@@ -1,28 +1,5 @@
 # YOLOv5 🚀 by Ultralytics, GPL-3.0 license
-"""
-Run inference on images, videos, directories, streams, etc.
 
-Usage - sources:
-    $ python path/to/detect.py --weights yolov5s.pt --source 0              # webcam
-                                                             img.jpg        # image
-                                                             vid.mp4        # video
-                                                             path/          # directory
-                                                             path/*.jpg     # glob
-                                                             'https://youtu.be/Zgi9g1ksQHc'  # YouTube
-                                                             'rtsp://example.com/media.mp4'  # RTSP, RTMP, HTTP stream
-
-Usage - formats:
-    $ python path/to/detect.py --weights yolov5s.pt                 # PyTorch
-                                         yolov5s.torchscript        # TorchScript
-                                         yolov5s.onnx               # ONNX Runtime or OpenCV DNN with --dnn
-                                         yolov5s.xml                # OpenVINO
-                                         yolov5s.engine             # TensorRT
-                                         yolov5s.mlmodel            # CoreML (macOS-only)
-                                         yolov5s_saved_model        # TensorFlow SavedModel
-                                         yolov5s.pb                 # TensorFlow GraphDef
-                                         yolov5s.tflite             # TensorFlow Lite
-                                         yolov5s_edgetpu.tflite     # TensorFlow Edge TPU
-"""
 
 import argparse
 import os
@@ -51,7 +28,7 @@ def run(
         weights=ROOT / 'yolov5s.pt',  # model.pt path(s)
         source=ROOT / 'data/images',  # file/dir/URL/glob, 0 for webcam
         data=ROOT / 'data/coco128.yaml',  # dataset.yaml path
-        imgsz=(640, 640),  # inference size (height, width)
+        imgsz=(640, 480),  # inference size (height, width)
         conf_thres=0.25,  # confidence threshold
         iou_thres=0.45,  # NMS IOU threshold
         max_det=1000,  # maximum detections per image
@@ -170,46 +147,10 @@ def run(
                     if save_crop:
                         save_one_box(xyxy, imc, file=save_dir / 'crops' / names[c] / f'{p.stem}.jpg', BGR=True)
 
-            # Stream results
-            im0 = annotator.result()
-            if view_img:
-                if p not in windows:
-                    windows.append(p)
-                    cv2.namedWindow(str(p), cv2.WINDOW_NORMAL | cv2.WINDOW_KEEPRATIO)  # allow window resize (Linux)
-                    cv2.resizeWindow(str(p), im0.shape[1], im0.shape[0])
-                cv2.imshow(str(p), im0)
-                cv2.waitKey(1)  # 1 millisecond
 
-            # Save results (image with detections)
-            if save_img:
-                if dataset.mode == 'image':
-                    cv2.imwrite(save_path, im0)
-                else:  # 'video' or 'stream'
-                    if vid_path[i] != save_path:  # new video
-                        vid_path[i] = save_path
-                        if isinstance(vid_writer[i], cv2.VideoWriter):
-                            vid_writer[i].release()  # release previous video writer
-                        if vid_cap:  # video
-                            fps = vid_cap.get(cv2.CAP_PROP_FPS)
-                            w = int(vid_cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-                            h = int(vid_cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-                        else:  # stream
-                            fps, w, h = 30, im0.shape[1], im0.shape[0]
-                        save_path = str(Path(save_path).with_suffix('.mp4'))  # force *.mp4 suffix on results videos
-                        vid_writer[i] = cv2.VideoWriter(save_path, cv2.VideoWriter_fourcc(*'mp4v'), fps, (w, h))
-                    vid_writer[i].write(im0)
 
-        # Print time (inference-only)
-        LOGGER.info(f'{s}Done. ({t3 - t2:.3f}s)')
 
-    # Print results
-    t = tuple(x / seen * 1E3 for x in dt)  # speeds per image
-    LOGGER.info(f'Speed: %.1fms pre-process, %.1fms inference, %.1fms NMS per image at shape {(1, 3, *imgsz)}' % t)
-    if save_txt or save_img:
-        s = f"\n{len(list(save_dir.glob('labels/*.txt')))} labels saved to {save_dir / 'labels'}" if save_txt else ''
-        LOGGER.info(f"Results saved to {colorstr('bold', save_dir)}{s}")
-    if update:
-        strip_optimizer(weights)  # update model (to fix SourceChangeWarning)
+    return im0  
 
 
 def parse_opt():
@@ -242,12 +183,12 @@ def parse_opt():
     parser.add_argument('--dnn', action='store_true', help='use OpenCV DNN for ONNX inference')
     opt = parser.parse_args()
     opt.imgsz *= 2 if len(opt.imgsz) == 1 else 1  # expand
-    print_args(vars(opt))
+    # print_args(vars(opt))
     return opt
 
 
 def main(opt):
-    check_requirements(exclude=('tensorboard', 'thop'))
+    # check_requirements(exclude=('tensorboard', 'thop'))
     run(**vars(opt))
 
 

@@ -2,8 +2,7 @@ import cv2
 import threading
 import time
 import logging
-import numpy as np 
-from yolov5.detect import run
+from yolov5.detect import run 
 logger = logging.getLogger(__name__)
 
 thread = None
@@ -18,6 +17,7 @@ class Camera:
 		self.max_frames = 5*self.fps
 		self.frames = []
 		self.isrunning = False
+
 	def run(self):
 		logging.debug("Perparing thread")
 		global thread
@@ -35,9 +35,9 @@ class Camera:
 		while self.isrunning:
 			v,im = self.camera.read()
 			if v:
+				im = self.object_detection(im)
 				if len(self.frames)==self.max_frames:
 					self.frames = self.frames[1:]
-				im = self.preprocess_img(im)
 				self.frames.append(im)
 			time.sleep(dt)
 		logger.info("Thread stopped successfully")
@@ -45,6 +45,7 @@ class Camera:
 	def stop(self):
 		logger.debug("Stopping thread")
 		self.isrunning = False
+
 	def get_frame(self, _bytes=True):
 		if len(self.frames)>0:
 			if _bytes:
@@ -56,10 +57,8 @@ class Camera:
 				img = f.read()
 		return img
 	
-	def preprocess_img(self,img):
+	def object_detection(self,img):
 		cv2.imwrite('images/img.jpg',img)
 		detected_img = run(weights = 'yolov5/best.pt',
-				  source = 'images')
-		return detected_img 
-	
-		
+						   source = 'images')
+		return detected_img  

@@ -4,7 +4,8 @@ from pathlib import Path
 from capture import capture_and_save
 from camera import Camera
 import argparse, logging, logging.config, conf
-
+import os 
+os.remove('images/img.jpg')
 logging.config.dictConfig(conf.dictConfig)
 logger = logging.getLogger(__name__)
 
@@ -31,6 +32,7 @@ def add_header(r):
 def entrypoint():
 	logger.debug("Requested /")
 	return render_template("index.html")
+
 
 @app.route("/r")
 def capture():
