@@ -1,6 +1,18 @@
 # Flask-Yolov5-Object Detection 
 Flask 웹 프레임 워크와 Yolov5 Object detection 모델로 만든 simple web deploy 입니다. 
 
+## Git clone 
+- 프롬프트(아나콘다) 실행 
+
+깃 클론 
+```
+git clone https://github.com/crimama/clf_obj.git
+```
+디렉토리 이동 
+```
+cd clf_obj/2_object_detection/flask_object_detection/
+```
+
 ## Requirements ##
 ```
 pip install -r requirements.txt
