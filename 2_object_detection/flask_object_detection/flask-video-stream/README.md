@@ -1,21 +1,10 @@
-# Flask-opencv webcam streaming server #
-This is a simple python3 script that serves a tiny Flask video webserver that allows to take photos or see real time video streaming of a connected camera/webcam controlled with opencv.
+# Flask-Yolov5-Object Detection 
+Flask 웹 프레임 워크와 Yolov5 Object detection 모델로 만든 simple web deploy 입니다. 
 
 ## Requirements ##
-In order to execute the script you need to install opencv3 -> `import cv2` and some python modules.
-
-Move to the project folder and try:
-
-### Try #1: ###
 ```
 pip install -r requirements.txt
 ```
-
-### Try #2: ###
-```
-pip install flask opencv-python
-```
-If it gets any error, probably with `opencv-python` try to install them manually.
 
 ## Running ##
 To start the service `cd` to project folder and type `python server.py` or `python3 server.py`
