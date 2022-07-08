@@ -9,7 +9,10 @@
    - 로컬 용은 참고 용 입니다.
    - 코랩에서 이미지 캡쳐가 모두 종료된 뒤 해당 이미지들을 로컬로 저장해야 함 
 ```
-- [1_Data_Collecting.ipynb](https://github.com/crimama/clf_obj/blob/main/2_object_detection/Data_Preparing/1_Data_Collecting.ipynb) 를 코랩에서 실행 
+
+
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/crimama/clf_obj/blob/main/2_object_detection/Data_Preparing/1_Data_Collecting.ipynb)
+ [1_Data_Collecting.ipynb](https://github.com/crimama/clf_obj/blob/main/2_object_detection/Data_Preparing/1_Data_Collecting.ipynb) 를 코랩에서 실행 
 - 따로 환경 설정은 필요 없으며 **디렉토리 설정**과 **이미지 캡쳐-코랩용**을 실행 시키면 아래와 같은 창이 생성 됨 
 ![image](https://user-images.githubusercontent.com/92499881/177734669-16c8ad45-6305-4206-a49f-56b1d996c15a.png)
 - `Capture` 버튼을 누르면 미리 선언한 `file_path`에 저장 됨 
