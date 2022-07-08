@@ -16,8 +16,8 @@
 
 # 2. 데이터 라벨링 (Annotating) 
 ```
-💡 Object Detection은 이미지 속 **객체의 라벨링(Annotating)**이 필요 함 
-   다양한 라벨링 툴이 있으며 이번 과정에서는 **“Roboflow**”를 활용 함
+💡 Object Detection은 이미지 속 객체의 라벨링(Annotating)이 필요 함 
+   다양한 라벨링 툴이 있으며 이번 과정에서는 Roboflow를 활용 함
 ```
 ## 1. **Roboflow** 가입 및 로그인 
 ## 2. 새 프로젝트 생성 
