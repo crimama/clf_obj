@@ -5,7 +5,7 @@
 ```
 # 1. 데이터 수집 및 Annotating 
 - [데이터 준비](https://github.com/crimama/clf_obj/tree/main/2_object_detection/Data_Preparing)
-- 해당 디렉토리에서 데이터 수집 및 Annotating 가이드라인 작성 되어 있음 
+- 해당 디렉토리에서 데이터 수집 및 Annotating 가이드라인 작성 되어 있습니다
 
 # 모델링 및 Web Deploy 
 
