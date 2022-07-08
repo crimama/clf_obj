@@ -12,4 +12,4 @@
 
 # 2. Web Deployment 
 ~~~
-- 로컬에서 git clone https://github.com/crimama/clf_old 
+- 로컬에서 git clone https://github.com/crimama/clf_obj
