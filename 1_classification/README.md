@@ -7,7 +7,7 @@
 
 ## 2.모델 학습 
 ```
-💡 데이터 학습에선 **2_Classification.ipynb** 파일을 사용, **코랩 환경**에서 진행
+💡 데이터 학습에선 2_Classification.ipynb 파일을 사용, ❗코랩 환경에서 진행
 
 - 데이터 수집 과정에서 모은 이미지를 이용해 학습을 진행 함
 - Pretrained model 로 mobilnet을 사용 함
